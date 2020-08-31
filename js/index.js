@@ -86,10 +86,18 @@ let mainContent = document.querySelectorAll('.text-content')
 let logo3= document.querySelector("#middle-img")
 logo3.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
-//two  new nav items
+// new nav item 1
 const newATag1 = document.createElement('a')
 const mainNav = document.querySelector('nav')
 newATag1.innerText = 'Reviews'
 newATag1.href = '#'
 mainNav.prepend(newATag1)
 newATag1.style.color = 'green'
+
+//new nav item 2
+const newATag2 = document.createElement('a')
+const mainNav2 = document.querySelector('nav')
+newATag2.innerText = 'Info'
+newATag2.href = '#'
+mainNav2.append(newATag2)
+newATag2.style.color = 'green'
