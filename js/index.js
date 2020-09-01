@@ -101,3 +101,20 @@ newATag2.innerText = 'Info'
 newATag2.href = '#'
 mainNav2.append(newATag2)
 newATag2.style.color = 'green'
+
+const contactInfo = document.querySelector('.contact')
+
+contactInfo.getElementsByTagName('h4')[0].textContent = siteContent["contact"]["contact-h4"]
+contactInfo.getElementsByTagName('p')[0].textContent = siteContent["contact"]["address"]
+contactInfo.getElementsByTagName('p')[1].textContent = siteContent["contact"]["phone"]
+contactInfo.getElementsByTagName('p')[2].textContent = siteContent["contact"]["email"]
+
+// footer
+
+const footer = document.querySelector('footer')
+footer.innerText = "Copyright Great Idea! 2018"
+
+
+
+
+// stretch goals
